@@ -1,0 +1,106 @@
+<!-- views/ga-menu.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos Evolutivos</title>
+    <link rel="icon" href="../static/img/icon-header2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container mt-4" style="padding-top: 30px;">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-white">ALGORITMOS GENÉTICOS</h1>
+            <a href="../index.html" class="btn btn-outline-light"><i class="bi bi-arrow-left"></i> Regresar al menú</a>
+        </div>
+
+        <h3 class="text-white mt-5">CONCEPTOS</h3>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card custom-card h-100 transparent-white-card2">
+                    <div class="card-body">
+                        <h5 class="card-title">Inspiración</h5>
+                        <p class="card-text">Los Algoritmos Genéticos se basan en los principios de la evolución natural para resolver problemas de optimización mediante población, selección, cruza y mutación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card h-100 transparent-white-card2">
+                    <div class="card-body">
+                        <h5 class="card-title">Características</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li><strong>Población:</strong> Maneja múltiples soluciones a la vez.</li>
+                                <li><strong>Exploración global:</strong> Evita caer en óptimos locales.</li>
+                                <li><strong>Basado en evolución:</strong> Simula reproducción, selección natural y mutación.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card h-100 transparent-white-card2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicaciones</h5>
+                        <p class="card-text">Usados en diseño de redes, inteligencia artificial, planificación, biología computacional y otras áreas complejas donde se busca una solución óptima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-white mt-5">ETAPAS</h3>
+        <div id="gaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100 text-white p-4 text-center">
+                        <img src="../static/img/poblacion-inicial.svg" class="img-carousel" alt="Población inicial">
+                        <h4>1. Población inicial</h4>
+                        <p>Se genera aleatoriamente un conjunto de soluciones iniciales (individuos). Cada uno representa una posible respuesta al problema.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 text-white p-4 text-center">
+                        <img src="../static/img/evaluacion-fitness.svg" class="img-carousel" alt="Evaluación fitness">
+                        <h4>2. Evaluación</h4>
+                        <p>Cada individuo es evaluado mediante una función objetivo o de aptitud (fitness) para saber qué tan buena es su solución.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 text-white p-4 text-center">
+                        <img src="../static/img/seleccion-cruce-mutacion.svg" class="img-carousel" alt="Selección, cruce y mutación">
+                        <h4>3. Selección, cruce y mutación</h4>
+                        <p>Se seleccionan los mejores individuos para reproducirse. Se cruzan para combinar características y se aplica mutación para generar diversidad.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 text-white p-4 text-center">
+                        <img src="../static/img/nueva-generacion.svg" class="img-carousel" alt="Nueva generación">
+                        <h4>4. Nueva generación</h4>
+                        <p>Los nuevos individuos reemplazan a los anteriores y el proceso se repite por generaciones hasta alcanzar una solución satisfactoria o límite establecido.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <h3 class="text-white mt-5">IMPLEMENTACIÓN</h3>
+        <div class="contenedor-boton">
+            <a href="../views/gen-implementacion.html" class="btn btn-explorar">Explorar</a>
+        </div>
+    </div>
+
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    background: url('../img/bg-animated.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h3, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;  /* bold */
+}
+
+.transparent-white-card {
+    background: rgba(255, 255, 255, 0.75); /* Blanco con opacidad */
+    border-radius: 2.5rem;                 /* Bordes redondeados */
+    box-shadow: 0 8px 12px rgba(83, 82, 82, 0.1); /* Sombra ligera */
+    margin: 40px;
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 992px) {
+    .transparent-white-card {
+        margin: 20px;
+    }
+}
+
+.transparent-white-card2 {
+    background: rgba(255, 255, 255, 0.75); /* Blanco con opacidad */
+    border-radius: 2.5rem;                 /* Bordes redondeados */
+    box-shadow: 0 8px 12px rgba(83, 82, 82, 0.1); /* Sombra ligera */
+    padding: 20px;
+}
+
+/* Contenedor centrado */
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* opcional */
+    padding-bottom: 90px;
+}
+
+/* Botón circular */
+.btn-explorar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.btn-explorar:hover {
+    transform: scale(1.4);
+    color: white;
+    background-color: #1c0311;
+}
+
+.custom-paragraph {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+/* Cuando la pantalla es menor a 992px (tablet o móvil), reduce márgenes */
+@media (max-width: 992px) {
+    .custom-paragraph {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+/* Para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 576px) {
+    .custom-paragraph {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.card-hover {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    background-color: #2a2332 !important;
+    color: white;
+}
+
+.card-hover:hover img {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+.img-carousel {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 8px white) drop-shadow(0 0 16px white);
+}
+
+.btn-style {
+    color: white; 
+    background-color: #e87369; 
+    border-radius: 15px; 
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+.img-circular-pequena {
+    width: 30px;       /* Ajusta el tamaño según necesites */
+    height: 30px;
+    object-fit: cover;  /* Para que se recorte bien sin deformarse */
+    display: block;
+    margin: 0 auto; /* Esto la centra horizontalmente */
+    margin-top: 30px;
+}
+
+.btn-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn-circular {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ca5843;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.btn-circular:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.btn-back {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+
